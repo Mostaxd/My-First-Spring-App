@@ -19,7 +19,7 @@ public class MercedesCar implements Car {
 	@Override
 	public void setEngine(EngineService newEngine) {
 		this.engine = newEngine;
-		System.out.println("New Engine installed in car");
+		System.out.println("A new Engine has been installed in car");
 	}
 	
 	@Override
