@@ -9,10 +9,21 @@
 
     <!-- Define your beans here -->
     
-    <!--  here it is easy to choose the type of Car in the config file
-    	  without changing the source code.  -->
+   
+    <!-- define the Dependency -->
     	  
-    <bean id="myCar" class="ToyotaCar"></bean>
+    <bean id="MyEngine"
+     class="MercedesAMGEngine"></bean>
+    	  
+    <bean id="myCar"
+     class="MercedesCar">
+      <!-- Setup Dependency injection -->
+      
+     <constructor-arg ref="MyEngine"/>
+     
+     </bean>
+     
+  
     
 </beans>
 

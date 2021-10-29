@@ -14,7 +14,7 @@ public class HelloSpring {
 		
 		// Call methods on the bean
 		System.out.println(car.checkCar());
-		
+		System.out.println(car.getEngineStats());
 		
 
 	}

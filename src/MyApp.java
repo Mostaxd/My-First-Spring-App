@@ -1,6 +1,8 @@
 
 public class MyApp {
-
+	
+}
+/*
 // This is a prototype of how the spring app will work.
 	
 	
@@ -22,3 +24,4 @@ public class MyApp {
 //				   using an XML config file to configure which car is it?
 
 }
+*/
