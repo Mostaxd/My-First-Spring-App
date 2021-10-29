@@ -16,10 +16,10 @@ public class HelloSpring {
 		System.out.println(car.checkCar());
 		System.out.println(car.getEngineStats());
 		
-
+		//Close the Spring Configuration File
+		context.close();
 	}
 	
-	//Conclusion: we can control the  type of object using the XML file, without changing the
-	//source code. (Spring Inversion Of Control)
+	
 
 }

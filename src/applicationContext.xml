@@ -14,12 +14,19 @@
     	  
     <bean id="MyEngine"
      class="MercedesAMGEngine"></bean>
+     
+     <bean id="newEngine"
+     class="LandCruiserEngine"></bean>
     	  
     <bean id="myCar"
      class="MercedesCar">
+     
       <!-- Setup Dependency injection -->
       
      <constructor-arg ref="MyEngine"/>
+     
+     <!-- Setter Injection -->
+     <property name="Engine" ref="newEngine"/>
      
      </bean>
      

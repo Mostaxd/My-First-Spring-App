@@ -1,7 +1,7 @@
 
-public interface CarEngineService {
+public interface EngineService {
+	
 	
 	public String getEngineStats();
 	
-
 }
