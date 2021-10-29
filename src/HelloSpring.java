@@ -20,6 +20,6 @@ public class HelloSpring {
 	}
 	
 	//Conclusion: we can control the  type of object using the XML file, without changing the
-	//source code.
+	//source code. (Spring Inversion Of Control)
 
 }
