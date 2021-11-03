@@ -1,16 +1,25 @@
 
 public class MercedesCar implements Car {
 
-	//define a private field for Spring dependency injection
+
+	private String carName;
 	private EngineService engine;
 	
 
 	
 	//define a constructor for dependency injection
-	public MercedesCar(EngineService engine) {
+	public MercedesCar(String carName, EngineService engine) {
+		this.carName = carName;
 		this.engine = engine;
 	}
 	
+	public String getCarName() {
+		return carName;
+	}
+
+	public void setCarName(String carName) {
+		this.carName = carName;
+	}
 	@Override
 	public String checkCar() {
 	return "Checked the Mercedes car";
@@ -24,9 +33,11 @@ public class MercedesCar implements Car {
 	
 	@Override
 	public String getEngineStats() {
-		// Check engine stats 
+     // Check engine stats 
 		return engine.getEngineStats();
 	}
+
+	
 	
 
 }

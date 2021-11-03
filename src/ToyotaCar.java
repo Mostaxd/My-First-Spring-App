@@ -3,7 +3,8 @@ public class ToyotaCar implements Car {
 	
 	//define a private field for Spring dependency injection
 	    
-		private EngineService engine;
+	private String carName;
+	private EngineService engine;
 		
 		
 	//define a constructor for dependency injection
@@ -12,7 +13,16 @@ public class ToyotaCar implements Car {
 			this.engine = newEngine;
 		}
 		
-		
+	@Override
+	public String getCarName() {
+		return carName;
+	}
+
+	@Override
+	public void setCarName(String carName) {
+		this.carName = carName;
+	}
+
 		
 	@Override
 	public String checkCar() {
@@ -32,6 +42,9 @@ public class ToyotaCar implements Car {
 		return engine.getEngineStats() ;
 	}
 
+
+
+	
 
 
 	

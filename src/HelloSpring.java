@@ -13,7 +13,7 @@ public class HelloSpring {
 		Car car = context.getBean("myCar", Car.class);
 		
 		// Call methods on the bean
-		System.out.println(car.checkCar());
+		System.out.println(car.getCarName());
 		System.out.println(car.getEngineStats());
 		
 		//Close the Spring Configuration File

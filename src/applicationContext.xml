@@ -12,21 +12,24 @@
    
     <!-- define the Dependency -->
     	  
-    <bean id="MyEngine"
-     class="MercedesAMGEngine"></bean>
+    <bean id="mercedesEngine"
+     class="MercedesEngine"></bean>
      
-     <bean id="newEngine"
-     class="LandCruiserEngine"></bean>
+     <bean id="toyotaEngine"
+     class="ToyotaEngine"></bean>
     	  
     <bean id="myCar"
      class="MercedesCar">
      
       <!-- Setup Dependency injection -->
       
-     <constructor-arg ref="MyEngine"/>
+     <constructor-arg index="0" value="My Mercedes AMG Car"/>
+     <constructor-arg index="1" ref="mercedesEngine"/>
      
-     <!-- Setter Injection -->
-     <property name="Engine" ref="newEngine"/>
+     <!-- Setter Injection:
+     Let's inject a toyotaEngine inside a Mercedes car! -->
+     
+     <property name="Engine" ref="toyotaEngine"/> 
      
      </bean>
      

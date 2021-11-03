@@ -1,5 +1,5 @@
 
-public class LandCruiserEngine implements EngineService {
+public class ToyotaEngine implements EngineService {
 
 	@Override
 	public String getEngineStats() {
