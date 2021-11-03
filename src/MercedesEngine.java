@@ -1,5 +1,5 @@
 
-public class MercedesEngine implements EngineService{
+public class MercedesEngine implements Engine{
 
 	
 	

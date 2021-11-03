@@ -1,5 +1,5 @@
 
-public class MyApp {
+public class MyAppPrototype {
 	
 }
 /*
@@ -13,15 +13,17 @@ public class MyApp {
 		Car toyota = new ToyotaCar();
 		
 // 2- Checking if the objects are working
-		System.out.println(mercedes.checkCar());
-		System.out.println(toyota.checkCar());
+		System.out.println(mercedes.getName());
+		System.out.println(toyota.getName());
 		
 	}
 	
 	
-// ==> Conclusion: This is a good program but its' problem is that it needs the source code in main
+// ==> Conclusion: This is a good program but its' problem is that it is HARD-Coded. It needs the source code in main
 //				   to be changed. Why Can't we make just ONE object Car and change the type of it
-//				   using an XML config file to configure which car is it?
+//				   using an XML config file to configure which car is it? How about keeping the main function as it is
+ * 				   and create objects and set their values externally? 
+ * 				   this is called Inversion of Control(IoC) and Field Injection. 
 
 }
 */

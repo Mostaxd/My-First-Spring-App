@@ -4,18 +4,18 @@ public class ToyotaCar implements Car {
 	//define a private field for Spring dependency injection
 	    
 	private String carName;
-	private EngineService engine;
+	private Engine engine;
 		
 		
 	//define a constructor for dependency injection
 		
-	public ToyotaCar(EngineService newEngine) {
+	public ToyotaCar(Engine newEngine) {
 			this.engine = newEngine;
 		}
 		
 	@Override
 	public String getCarName() {
-		return carName;
+		return "Car: "+ carName;
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class ToyotaCar implements Car {
 	}
 		
 	@Override
-	public void setEngine(EngineService newEngine) {
+	public void setEngine(Engine newEngine) {
 		this.engine = newEngine;
 		System.out.println("A new Engine has been installed in car");
 		

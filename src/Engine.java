@@ -1,5 +1,5 @@
 
-public interface EngineService {
+public interface Engine {
 	
 	
 	public String getEngineStats();

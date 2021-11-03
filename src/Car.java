@@ -5,6 +5,6 @@ public interface Car {
 	public void setCarName(String carName);
 	public String checkCar();
 	public String getEngineStats();
-	public void setEngine(EngineService newEngine);
+	public void setEngine(Engine newEngine);
 
 }

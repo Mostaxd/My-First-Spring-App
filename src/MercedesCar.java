@@ -3,18 +3,18 @@ public class MercedesCar implements Car {
 
 
 	private String carName;
-	private EngineService engine;
+	private Engine engine;
 	
 
 	
 	//define a constructor for dependency injection
-	public MercedesCar(String carName, EngineService engine) {
+	public MercedesCar(String carName, Engine engine) {
 		this.carName = carName;
 		this.engine = engine;
 	}
 	
 	public String getCarName() {
-		return carName;
+		return "Car: "+ carName;
 	}
 
 	public void setCarName(String carName) {
@@ -26,7 +26,7 @@ public class MercedesCar implements Car {
 	}
 
 	@Override
-	public void setEngine(EngineService newEngine) {
+	public void setEngine(Engine newEngine) {
 		this.engine = newEngine;
 		System.out.println("A new Engine has been installed in car");
 	}
