@@ -28,6 +28,6 @@ But found it unneccessary.
 
 
 
-XML-file was used in this version... A new annotations version of this Project is going to be uploaded soon after i finish this one! (to be updated)
+XML-file was used in this version... A new annotations version of this Project is going to be uploaded soon! 
 
 
